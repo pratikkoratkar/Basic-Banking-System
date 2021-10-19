@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Balance</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/jquery-ui-1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/jquery-ui-1.12.1/jquery-ui.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,900;1,900&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        margin: 10px;
+    }
+    
+    #top {
+        margin-top: 30px;
+    }
+    
+    #customer-head {
+        /* margin: 30px 0px; */
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #names {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .table {
+        font-family: 'Exo 2', sans-serif;
+        font-size: 23px;
+        width: 1400px;
+        text-align: center;
+        margin-top: 30px;
+    }
+    
+    .tr1 {
+        opacity: 0.7;
+    }
+    
+    .tr1:hover {
+        opacity: 1;
+    }
+    
+    .tr2 {
+        opacity: 0.5;
+        background-color: rgb(175, 175, 175);
+        color: black;
+    }
+    
+    .tr2:hover {
+        opacity: 1;
+    }
+    
+    #head_div1 {
+        /* display: inline-block; */
+        font-family: 'Exo 2', sans-serif;
+        /* margin-left: 310px;
+        margin-top: 20px;*/
+        font-size: 60px;
+    }
+    
+    #head_div2 {
+        /* display: inline-block; */
+        /* float: right;
+        margin-right: 100px; */
+        margin-right: 60px;
+    }
+    
+    #head_div3 {
+        /* display: inline-block; */
+        /* margin-top: -70px;
+        margin-left: 56px; */
+        margin-left: 30px;
+    }
+    
+    img {
+        border-radius: 50%;
+    }
+    
+    .btn {
+        font-size: 30px;
+        border: black 1px solid;
+        border-radius: 20px;
+        font-family: 'Exo 2', sans-serif;
+        margin-top: 20px;
+    }
+    
+    .btn:hover {
+        transform: scale(1.02);
+    }
+    
+    h1 {
+        font-size: 50px;
+    }
+</style>
+
+<body>
+    <section id="top">
+
+        <div id="customer-head">
+            <div id="head_div3">
+                <img src="./Dreambank.jpg" width="100px">
+            </div>
+            <div id="head_div1">
+                <h1>Our Customers</h1>
+            </div>
+            <div id="head_div2">
+                <!-- <a href="index.html"><button class="btn"><i class="fa fa-home"></i> Home</button></a> -->
+                <a href="index.html"><button class="btn btn-outline-dark mx-5" type="submit"><i class="fa fa-home"></i>Home</button></a>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="names">
+        <table class="table">
+            <thead>
+                <tr class="table-dark tr1">
+                    <th scope="col">No</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Account No</th>
+                    <th scope="col">Bank Balance</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-secondary tr1">
+                    <th scope="row">1</th>
+                    <td>Rahul</td>
+                    <td>71001</td>
+                    <td id="1001">71000</td>
+                </tr>
+                <tr class="tr2">
+                    <th scope="row">2</th>
+                    <td>Rohit</td>
+                    <td>71002</td>
+                    <td id="1002">59000</td>
+                </tr>
+                <tr class="table-secondary tr1">
+                    <th scope="row">3</th>
+                    <td>Tushar</td>
+                    <td>71003</td>
+                    <td id="1003">91000</td>
+                </tr>
+                <tr class="tr2">
+                    <th scope="row">4</th>
+                    <td>Tejas</td>
+                    <td>71004</td>
+                    <td id="1004">93000</td>
+                </tr>
+                <tr class="table-secondary tr1">
+                    <th scope="row">5</th>
+                    <td>Soham</td>
+                    <td>71005</td>
+                    <td id="1005">70000</td>
+                </tr>
+                <tr class="tr2">
+                    <th scope="row">6</th>
+                    <td>Sumedh</td>
+                    <td>71006</td>
+                    <td id="1006">65000</td>
+                </tr>
+                <tr class="table-secondary tr1">
+                    <th scope="row">7</th>
+                    <td>Yogita</td>
+                    <td>71007</td>
+                    <td id="1007">50000</td>
+                </tr>
+                <tr class="tr2">
+                    <th scope="row">8</th>
+                    <td>Arun</td>
+                    <td>71008</td>
+                    <td id="1008">40000</td>
+                </tr>
+                <tr class="table-secondary tr1">
+                    <th scope="row">9</th>
+                    <td>Divya</td>
+                    <td>71009</td>
+                    <td id="1009">75000</td>
+                </tr>
+                <tr class="tr2">
+                    <th scope="row">10</th>
+                    <td>Priti</td>
+                    <td>71010</td>
+                    <td id="1010">35000</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+body {
+    margin: 0px 10px;
+    /* background-color: #a7a6b9; */
+}
+
+.menu {
+    font-weight: bold;
+    font-size: 22px;
+    margin: 0px 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#hr1 {
+    width: 300px;
+    display: inline-block;
+    margin: -33px auto;
+}
+
+#hr2 {
+    width: 565px;
+    display: inline-block;
+}
+
+#footer {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.fa {
+    text-decoration: none;
+    margin: 20px;
+    font-size: 40px;
+}
+
+.fa:hover {
+    transform: scale(105%);
+}
+
+#get-social {
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+img {
+    border-radius: 50%;
+}
+
+.card-img-top {
+    width: 100px;
+    margin: 40px auto 0px auto;
+}
+
+.card-img-top:hover {
+    cursor: pointer;
+    transform: scale(110%);
+}
+
+.card {
+    text-align: center;
+}
+
+.card-title {
+    font-size: 25px;
+}
+
+#end {
+    margin-top: 70px;
+}
+
+#head_About {
+    margin-top: 30px;
+    font-size: 60px;
+    text-align: center;
+    font-family: "Raleway";
+    background-color: rgb(232, 232, 234);
+    border-radius: 30px;
+    padding: 60px 0px;
+}
+
+#footer {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+#hr1 {
+    width: 300px;
+    display: inline-block;
+    margin: -2px auto;
+}
+
+#hr2 {
+    margin: 0px;
+}
+
+.fa {
+    text-decoration: none;
+    margin: 20px;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.fa:hover {
+    transform: scale(185%);
+    transition: ease 1s;
+}
+
+#get-social {
+    font-size: 25px;
+    margin-top: 20px;
+    /* margin-bottom: 10px; */
+}
+
+.copyright {
+    background-color: rgb(88, 88, 88);
+}
